@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
-import { Nqueen, changeDelay } from "../Algorithm/nqueen";
+import { Nqueen } from "../Algorithm/nqueen";
+import { changeDelay } from "../Utils/utils";
+import './nqueenComponent.css'
 
 export default function NQueen() {
 
@@ -36,34 +38,53 @@ export default function NQueen() {
 
 	return (
 		<div>
-			<div>
-				<label>
-					<input type='range' min='4' max='8' value={gridSize} onChange={(e) => (setGridd(e))} />
-					{gridSize}
-				</label>
-				<br />
-				<label>
+			<div className='navbar'>
+				<ul>
+					<li><a className='heading' href="#home">N-Queens Visualiser</a></li>
+				</ul>
+			</div>
+			<div style={{ marginTop: '30px' }}>
+				<div>
+					<label>
+						Grid Size: {gridSize} X {gridSize}
+						<input id='rangeSlider' type='range' min='4' max='8' value={gridSize} onChange={(e) => (setGridd(e))} />
+					</label>
+					<br />
+					<label>
+						Delay:
 					<input type='range' min='5' max='100' onChange={(e) => { changeDelay(e.target.value) }} />
-				</label>
-				<div><button className='btn' onClick={Nqueen}>N-QUEEN</button></div>
-			</div>
-			<div>
-				<table className='box'>
-					<tbody>
-						{
-							grid === null ? null :
-								grid.map((row, ridx) => (
-									<tr key={ridx}>
-										{
-											row.map((c, cid) => (<td key={cid} className={c}></td>))
-										}
-									</tr>
-								))
-						}
+					</label>
+					<div><button className='btn' id='nqueen' onClick={Nqueen}>N-QUEEN</button></div>
 
-					</tbody>
-				</table>
+				</div>
+				<br />
+				<div className='box'>
+					<table className='board'>
+						<tbody>
+							{
+								grid === null ? null :
+									grid.map((row, ridx) => (
+										<tr key={ridx}>
+											{
+												row.map((c, cid) => (
+													<td
+														key={cid}
+														style={{
+															width: 400 / gridSize,
+															height: 400 / gridSize,
+															fontSize: 200 / gridSize,
+														}}
+														className={c} >
+													</td>
+												))
+											}
+										</tr>
+									))
+							}
+						</tbody>
+					</table>
+				</div>
 			</div>
-		</div>
+		</div >
 	)
 }

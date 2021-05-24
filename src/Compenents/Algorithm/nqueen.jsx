@@ -1,18 +1,8 @@
+import { delay, disableAllButtons, MakeDelay } from "../Utils/utils";
+
 var col = [];
 var leftD = [];
 var rightD = [];
-
-var delay = 10;
-
-export function changeDelay(val) {
-	delay = val;
-}
-
-async function MakeDelay(milisec) {
-	return new Promise(resolve => {
-		setTimeout(() => { resolve('') }, milisec);
-	})
-}
 
 async function nqueenHelper(grid, i, n) {
 	var c = i * n;
@@ -50,6 +40,8 @@ async function nqueenHelper(grid, i, n) {
 }
 
 export async function Nqueen() {
+	disableAllButtons(true)
+	document.getElementById("nqueen").className = 'btndisabled';
 	var grid = document.querySelectorAll('.element-block')
 	var n = grid.length;
 	n = Math.sqrt(n);
@@ -65,5 +57,6 @@ export async function Nqueen() {
 		rightD.push(false);
 	}
 	await nqueenHelper(grid, 0, n);
-	// return grid;
+	document.getElementById("nqueen").className = 'btn';
+	disableAllButtons(false)
 }

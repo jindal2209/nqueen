@@ -1,45 +1,45 @@
-.App {
-  text-align: center;
-  position: relative;
-}
-
-/* body { */
-	/* background-color: black; */
-	/* color: white; */
-/* } */
-
-td {
-	content: "\265B";
-  }
-
-.box {
-  border: 10px solid black;
-  width: fit-content;
-  height: fit-content;
-  /* position: absolute; */
-  box-shadow: 0 12px 16px 0 rgba(81, 81, 81, 0.7), 0 17px 50px 0 rgba(81, 81, 81, 0.7);
-}
-
 .white { 
-  margin: 0;
-  width: 80px; 
-  height: 80px;
   background-color: whitesmoke;
-  font-size:50px;
-  text-align:center;
-  display: table-cell;
-  vertical-align:middle;
-  border: 1px solid black;
 }
 
 .black {
-	margin: 0;
-	width: 80px; 
-	height: 80px;
 	background-color: #999;
-	font-size:50px;
-	text-align:center;
-	display: table-cell;
-	vertical-align:middle;
-	border: 1px solid black;
+}
+
+.btn {
+	margin: 10px 0;
+	display: inline-block;
+	padding: 6px;
+	width: 100px;
+	color: #818181;
+	font-weight: 400;
+	border: 2px solid #818181;
+	background-color: transparent;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 100px;
+	transition: 0.4s;
+}
+
+.btn:hover {
+	color: #f1f1f1;
+	border: 2px solid #f1f1f1;
+	box-shadow: 0 12px 16px 0 rgba(81, 81, 81, 0.7), 0 17px 50px 0 rgba(81, 81, 81, 0.7);
+	text-shadow: 0 12px 16px 0 rgba(81, 81, 81, 0.7), 0 17px 50px 0 rgba(81, 81, 81, 0.7);
+}
+
+.btndisabled {
+	margin: 10px 0;
+	display: inline-block;
+	padding: 6px;
+	width: 100px;
+	border-radius: 100px;
+	font-weight: 400;
+	background-color: transparent;
+	cursor: not-allowed;
+	text-transform: uppercase;
+	color: #f1f1f1;
+	border: 2px solid #f1f1f1;
+	box-shadow: 0 12px 16px 0 rgba(81, 81, 81, 0.7), 0 17px 50px 0 rgba(81, 81, 81, 0.7);
+	text-shadow: 0 12px 16px 0 rgba(81, 81, 81, 0.7), 0 17px 50px 0 rgba(81, 81, 81, 0.7);
 }
