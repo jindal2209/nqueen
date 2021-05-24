@@ -1,3 +1,6 @@
+# Sorting Visualizer
+Project Hosted at https://jindal2209.github.io/nqueen
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
