@@ -1,10 +1,10 @@
 import './App.css';
-import NQueen from './Compenents/nqueenCompoenet';
+import NQueen from './Compenents/Visualizer/nqueenComponent';
 
 function App() {
 	return (
 		<div className="App">
-			<NQueen></NQueen>
+			<NQueen />
 		</div>
 	);
 }

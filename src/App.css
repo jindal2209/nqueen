@@ -3,9 +3,14 @@
   position: relative;
 }
 
-body {
-	background-color: black;
-}
+/* body { */
+	/* background-color: black; */
+	/* color: white; */
+/* } */
+
+td {
+	content: "\265B";
+  }
 
 .box {
   border: 10px solid black;
@@ -24,6 +29,7 @@ body {
   text-align:center;
   display: table-cell;
   vertical-align:middle;
+  border: 1px solid black;
 }
 
 .black {
