@@ -3,7 +3,26 @@ Project Hosted at https://jindal2209.github.io/nqueen
 
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
+Hosted on github via gh-pages
+
+### Github Hosting
+### `npm run deploy`
+Step1: Install github pages by `npm install gh-pages`\
+Step2: in package.json add "homepage" attribute example(https://username.github.io/repositoryName). \
+Step3: in package.json replace scripts attribute by following lines\
+"scripts": {\
+		"start": "react-scripts start",\
+		"build": "react-scripts build",\
+		"test": "react-scripts test",\
+		"eject": "react-scripts eject",\
+		"predeploy": "npm run build",\
+		"deploy": "gh-pages -d build"\
+	},\
+Step4: in command line run `npm run deploy`
+
+Check in pages settings your repo will be hosted .
+
 
 ## Available Scripts
 
