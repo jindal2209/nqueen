@@ -12,17 +12,16 @@ Step1: Install github pages by `npm install gh-pages`\
 Step2: in package.json add "homepage" attribute example(https://username.github.io/repositoryName). \
 Step3: in package.json replace scripts attribute by following lines\
 "scripts": {\
-		"start": "react-scripts start",\
-		"build": "react-scripts build",\
-		"test": "react-scripts test",\
-		"eject": "react-scripts eject",\
-		"predeploy": "npm run build",\
-		"deploy": "gh-pages -d build"\
+		&emsp; "start": "react-scripts start",\
+		&emsp; "build": "react-scripts build",\
+		&emsp; "test": "react-scripts test",\
+		&emsp; "eject": "react-scripts eject",\
+		&emsp; "predeploy": "npm run build",\
+		&emsp; "deploy": "gh-pages -d build"\
 	},\
 Step4: in command line run `npm run deploy`
-
 Check in pages settings your repo will be hosted .
-
+\\
 
 ## Available Scripts
 
