@@ -41,6 +41,11 @@ export default function NQueen() {
 			<div className='navbar'>
 				<ul>
 					<li><a className='heading' href="#home">N-Queens Visualiser</a></li>
+					<li style={{ float: 'right' }}>
+						<a style={{ padding: '5px' }} href="https://github.com/jindal2209/nqueen" target='_blank' rel='noreferrer' >
+							<img style={{ width: '70px' }} src={process.env.PUBLIC_URL + "/iff.png"} alt='myGithub' />
+						</a>
+					</li>
 				</ul>
 			</div>
 			<div style={{ marginTop: '30px' }}>
