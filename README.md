@@ -1,4 +1,4 @@
-# Sorting Visualizer
+# Nqueen
 Project Hosted at https://jindal2209.github.io/nqueen
 
 # Getting Started with Create React App
